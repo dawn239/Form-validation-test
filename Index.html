@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Jewellery Order</title>
 </head>
 <body>
@@ -14,11 +15,11 @@
             <p>Login to begin your order</p>
             <label for="username">Username</label>
             
-            <input type="text" name="user" id="username">
+            <input type="text" name="user" id="username" required minlength="6" maxlength="20" required pattern="[a-zA-Z0-9]+">
             
             <label for="userpass">Password</label>
             
-            <input type="password" name="password" id="userpass"
+            <input type="password" name="password" id="userpass" required minlength="8" maxlength="12">
         </section>
 
         <hr/>
@@ -40,7 +41,7 @@
         <section id="beadnum">
             <label for="num">Number of beads</label>
             <br>
-            <input id="num" name="num" type="number" step="1"
+            <input id="num" name="num" type="number" step="1" min="3" max="10">
         </section>
 
         <hr/>
@@ -115,7 +116,7 @@
         <section id="extra">
             <label for="additional">Any additional details to add?</label>
             <br>
-            <textarea id="additional" name="additional" rows="4" cols="30"></textarea>
+            <textarea id="additional" name="additional" rows="4" cols="180"></textarea>
         </section>
 
         <hr/>
