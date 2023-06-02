@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Order</title>
+</head>
+<body>
+    <form action="/practice.html" method="POST">
+      <h1>Jewellery Order Form</h1>
+      <!--Login section-->
+        <section id="login">
+            <p>Login to begin your order</p>
+            <label for="username">Username</label>
+            
+            <input type="text" name="user" id="username">
+            
+            <label for="userpass">Password</label>
+            
+            <input type="password" name="password" id="userpass"
+        </section>
+
+        <hr/>
+
+<!--Type of jewellery-->
+        <section id="type">
+            <p>What type of jewellery do you require?</p>
+            <input type="radio" id="bracelet" name="type" value="bracelet">
+            <label for="bracelet">Bracelet</label>
+            <input type="radio" id="necklace" name="type" value="necklace">
+            <label for="necklace">Necklace</label>
+            <input type="radio" id="anklet" name="type" value="anklet">
+            <label for="anklet">Anklet</label>
+        </section>
+
+        <hr/>
+
+ <!--Choose number of beads-->
+        <section id="beadnum">
+            <label for="num">Number of beads</label>
+            <br>
+            <input id="num" name="num" type="number" step="1"
+        </section>
+
+        <hr/>
+
+<!--Choose colour of beads-->
+        <section id="beadcol">
+            <p>Select the colours of beads you would like to include</p>
+            <label for="blue">Blues</label>
+            <input id="blue" type="checkbox" name="colour" value="blue"
+            <br>
+            <label for="pink">Pinks</label>
+            <input id="pink" type="checkbox" name="colour" value="pink"
+            <br>
+            <label for="green">Greens</label>
+            <input id="green" type="checkbox" name="colour" value="green"
+            <br>
+            <label for="purple">Purples</label>
+            <input id="purple" type="checkbox" name="colour" value="purple"
+            <br>
+            <label for="yellow">Yellows/Golds</label>
+            <input id="yellow" type="checkbox" name="colour" value="yellow"
+            <br>
+            <label for="red">Reds</label>
+            <input id="red" type="checkbox" name="colour" value="red"
+            <br>
+        </section>
+
+        <hr/>
+
+<!--Choose colour shade range - dark to light-->
+        <section id="beadshade">
+            <label for="shade">Chose the shade range of your beads</label>
+            <br>
+            <span>Light</span>
+            <input id="shade" name="shade" type="range" min="0" max="10" step="1">
+            <span>Dark</span>
+        </section>
+
+        <hr/>
+
+<!--Choose colour of cord-->
+        <section id="cordcolour">
+            <label for="cord">Select your cord colour</label>
+            <select id="cord" name="cord">
+                <option value="black">Black</option>
+                <option value="grey">Grey</option>
+                <option value="natural">Natural</option>
+            </select>
+        </section>
+
+        <hr/>
+
+<!--Choose country for delivery-->
+        <section id="delcountry">
+            <label for="country">Which country will this be delivered to?</label>
+            <input type="text" list="countries" id="country" name="country">
+
+            <datalist id="countries">
+                <option value="Scotland"></option>
+                <option value="England"></option>
+                <option value="Ireland"></option>
+                <option value="Wales"></option>
+                <option value="Channel Isles"></option>
+                <option value="USA"></option>
+                <option value="Austria"></option>
+            </datalist>
+        </section>
+
+        <hr/>
+
+<!--Any further details box-->
+        <section id="extra">
+            <label for="additional">Any additional details to add?</label>
+            <br>
+            <textarea id="additional" name="additional" rows="4" cols="30"></textarea>
+        </section>
+
+        <hr/>
+
+<!--submit button-->
+        <input type="submit" value="Submit Order">
+
+
+
+
+    </form>
+</body>
+</html>
